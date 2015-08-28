@@ -1,3 +1,5 @@
+/* styles.scss */
+
 html, body, .MainContainer, {
   height: 100%;
   margin: 0;
@@ -130,28 +132,38 @@ html, body, .MainContainer, {
   overflow-y: auto;
   //opacity: 0;
 
-  .splash {
-    box-sizing: border-box;
-    background-image: url('sunset_mackinac_bridge_crop.jpg');
-    background-size: cover;
-    height: 10em;
-    text-align: center;
-    color: white;
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: 2.5em;
-    padding-top: 5em;
-  }
+  .mainScroller {
+    position: relative;
 
-  .mainText {
-    padding: 2em 10em;
-
-    h1 {
-      font-size: 3em;
+    .splash {
+      box-sizing: border-box;
+      background-image: url('sunset_mackinac_bridge_crop.jpg');
+      background-size: cover;
+      height: 10em;
+      text-align: center;
+      color: white;
+      font-family: "Lucida Console", Monaco, monospace;
+      font-size: 2.5em;
+      padding: 5em 2em 0 2em;
     }
-    p {
-      font-size: 1em;
-      font-family: Verdana, Geneva, sans-serif;
-      line-height: 150%;
+
+    .mainText {
+      padding: 2em 10em;
+
+      h1 {
+        font-size: 3em;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.075);
+      }
+
+      h2 {
+        font-family: Verdana, Geneva, sans-serif;
+      }
+
+      p {
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        line-height: 150%;
+      }
     }
   }
 }
