@@ -134,6 +134,7 @@ var NavBar = React.createClass({
         );
     }
 });
+
 var MainContent = React.createClass({
     componentDidMount: function() {
         // Fade main content in after 4 seconds
