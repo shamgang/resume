@@ -1,4 +1,25 @@
 /* app.jsx */
+// Helper functions
+function fadeIn(ref) {
+    // Fade node in after four seconds for one second
+    var $node = $(ref.getDOMNode());
+    setTimeout(function() {
+        $node.animate({
+            opacity: 1
+        }, 1000);
+    }, 4000);
+}
+// Disable animated scrolling for now because subheading clicks are badly defined
+/*
+function scrollToName(elementName) {
+    // Scroll to indicated heading
+    // Use name rather than id to avoid default anchor link behavior
+    var target_selector = '[name=\'' + elementName + '\']';
+    console.log(target_selector);
+    var target_top = $(target_selector).position().top;
+    $('.mainContent').animate({ scrollTop: target_top}, 1500);
+}
+*/
 // React classes
 var Portrait = React.createClass({
     componentDidMount: function() {
@@ -42,9 +63,6 @@ var NavGroup = React.createClass({
         };
     },
     handleClick: function(event) {
-        // Prevent default to override default anchor link behavior
-        event.preventDefault();
-
         if(this.state.open) {
             // If open, close by removing sublinks, background color and using the down arrow image
             this.setState({
@@ -55,12 +73,14 @@ var NavGroup = React.createClass({
             });
         }
         else {
-            // If closed, open by adding sublinks, setting a background color and using the up arrow image
+            // If closed, scroll and open by adding sublinks, setting a background color and using the up arrow
 
             var navLinks = this.props.data.subheadings.map(function(navLink, index) {
                 return(
                     <a key={index} href={'#' + navLink.hash}>
-                        <div className="navLink">{navLink.text}</div>
+                        <div className="navLink">
+                            {navLink.text}
+                        </div>
                     </a>
                 );
             });
@@ -72,11 +92,8 @@ var NavGroup = React.createClass({
                 open: true
             });
 
-            // Set the hash manually and animated scroll to the correct heading
-            window.location.hash = this.props.data.hash;
-            var target_id = window.location.hash;
-            var target_top = $(target_id).position().top;
-            $('.mainContent').animate({ scrollTop: target_top}, 1500);
+            // Scroll to corresponding content
+            //scrollToName(this.props.data.hash);
         }
     },
     render: function() {
@@ -96,15 +113,8 @@ var NavGroup = React.createClass({
 });
 var NavBar = React.createClass({
     componentDidMount: function() {
-/*
-        // Animate navbar in after 4 seconds
-        var $navBar = $(this.refs.navBar.getDOMNode());
-        setTimeout(function() {
-            $navBar.animate({
-                opacity: 1
-            }, 1000);
-        }, 4000);
-*/
+        // Fade navbar in after 4 seconds
+        //fadeIn(this.refs.navBar);
     },
     render: function() {
         // NavBar element contains a title and a list of NavGroups
@@ -126,15 +136,8 @@ var NavBar = React.createClass({
 });
 var MainContent = React.createClass({
     componentDidMount: function() {
-/*
-        // Animate main content in after 4 seconds
-        var $mainContent = $(this.refs.mainContent.getDOMNode());
-        setTimeout(function() {
-            $mainContent.animate({
-                opacity: 1
-            }, 1000);
-        }, 4000);
-*/
+        // Fade main content in after 4 seconds
+        //fadeIn(this.refs.mainContent);
     },
     render: function() {
         // MainContent element contains a splash and scrolling content organized by headings and subheadings
