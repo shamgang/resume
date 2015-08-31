@@ -163,9 +163,9 @@ var MainContent = React.createClass({
                         <h1 id="software">software</h1>
                         <p>
                             {'\u00a0\u00a0'} I write software to build products, create experiences, and break technical
-                            barriers. I regularly use C, C++, Python, MATLAB, JavaScript, HTML/CSS, Java/JNI and I've
-                            also used OpenCL, SQL, PHP, C&#35;, and Ruby. I've worked in development environments in
-                            Linux, Mac, and Windows, using Bash, Make, CMake, Gradle, IntelliJ, and Code Composer.
+                            barriers. I regularly use C, C++, Python, MATLAB, JavaScript, HTML/CSS, and Java/JNI and
+                            I've also used OpenCL, SQL, PHP, C&#35;, and Ruby. I've worked in development environments
+                            in Linux, Mac, and Windows, using Bash, Make, CMake, Gradle, IntelliJ, Unity, and Code Composer.
                             In industry, I've worked on consumer devices, web and mobile applications, and
                             native UIs and application frameworks. In the process I have learned and applied skills in
                             object-oriented programming, multi-threaded CPU programming, graphics, massively parallel
@@ -189,19 +189,83 @@ var MainContent = React.createClass({
                             data collection using HTML5, CSS, and AngularJS in a Ruby on Rails environment. I also
                             worked with Java and JNI to implement cloud interfaces.
                         </p>
+                        <h2 id="xray">UofM Medical Imaging</h2>
+                        <p>
+                            During my sophomore summer I worked on a team headed by the internationally acclaimed
+                            {'\u00a0'}<a target="_blank" href="http://web.eecs.umich.edu/~fessler/">Professor Jeffrey Fessler</a>
+                            {'\u00a0'}researching methods for X-ray computed tomography that
+                            significantly outperform status quo methods with the help of parallel computing on GPUs.
+                            This involved analyzing current research in medical imaging in order to devise massively
+                            parallel algorithms from applicable linear algebra formulae, and then implementing those
+                            algorithms using both C and OpenCL for optimal cooperation between the CPU and GPUs.
+                            This project involved heavy optimization, with every line of code written to maximize
+                            efficiency with respect to the hardware.
+                        </p>
+                        <h2 id="nuubo">Nuubo</h2>
+                        <p>
+                            During my freshman summer I worked in Madrid at a wearable medical technology startup called
+                            {'\u00a0'}<a target="_blank" href="http://www.nuubo.com/">Nuubo</a> that has created
+                            an EKG in the form of an undershirt. I worked on porting libraries to the GPU using
+                            OpenCL to investigate performance improvements. I worked in a Spanish-speaking office
+                            and became conversational in Spanish during this time.
+                        </p>
+                        <h2 id="web">web</h2>
+                        <p>
+                            I've been involved with web development for personal and professional projects.
+                            Besides the obvious use of JavaScript, HTML, and CSS, I use Angular, React, Node, jQuery,
+                            Ruby on Rails, Bootstrap, Foundation, SQL, and PHP. I often use IntelliJ-based IDEs and
+                            I've used Grunt for task running. This website is one example of my web development, and
+                            the source is hosted on GitHub here TODO.
+                        </p>
+                        <p>
+                            I recently built an internal website at Amazon using Angular and Ruby on Rails.
+                            Prior to that, I was responsible for a redesign of
+                            {'\u00a0'}<a target="_blank" href="https://www.recourse.co">Recourse.co</a>
+                            {'\u00a0'}with a particular focus on responsiveness and cross-device compatibility.
+                            I have also worked on personal projects, including an event tracking and crowdfunding
+                            website built with APIs from Google Maps, Stripe, and Facebook TODO.
+                        </p>
+                        <h2 id="android">android</h2>
+                        <p>
+                            I worked extensively with Android when developing for the Fire TV at Amazon. I worked daily
+                            with a very large Android code base, working on UI as well low-level concerns such as
+                            graphics and USB on the Android platform. I developed Java/Android code in Android Studio
+                            with Gradle for UI development and I worked with C++, the Android NDK, JNI, and CMake for
+                            system-level development.
+                        </p>
                         <h2 id="c++">C/C++</h2>
                         <p>
                             {'\u00a0\u00a0'}
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                         <h2 id="dsp">digital signal processing</h2>
-                        <iframe width="100%" height="320"
+                        <p>
+                            {'\u00a0\u00a0'} As part of my computer engineering coursework I've studied both analog
+                            and digital signal theory as well as applications of digital signal processing. My senior
+                            design project was an embedded system for processing, visualizing, and analyzing music
+                            signals. I produced this demo video of the project:
+                        </p>
+                        <iframe
                             src="//www.youtube.com/embed/lzsdMJA22CA?rel=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen>
                         </iframe>
+                        <p>
+                            The project involved real-time effects processing, note and key detection, graphics
+                            programming, serial inter-device communication, and circuit design using tools such as
+                            TI DSP chips and microcontrollers, Altera FPGAs, MATLAB, C, I2C, I2S, SPI, UART, Verilog, soldering,
+                            laser cutters, machine presses, SolidWorks, Code Composer Studio, oscilloscopes, and
+                            function generators. The algorithm implementations are hosted on GitHub
+                            {'\u00a0'}<a target="_blank" href="https://github.com/shamgang/mpsembedded">here</a>.
+                        </p>
+                        <p>
+                            My freshman year, I created a music synthesizer and transcriber in MATLAB. The presentation
+                            video for that project is here:
+                        </p>
+                        <iframe
+                            src="//www.youtube.com/embed/Hl607Lvl_D4?rel=0&showinfo=0&autohide=1&start=260" frameborder="0" allowfullscreen>
+                        </iframe>
+                        <p>
+                            This was my first experience with programming and it involved GUI creation, pitch detection,
+                            and digital synthesis.
+                        </p>
                         <h1 id="music">music</h1>
                         <p>
                             {'\u00a0\u00a0'}
@@ -228,6 +292,8 @@ var MainContainer = React.createClass({
                 hash: 'software',
                 subheadings: [
                     { text: 'Amazon Lab126', hash: 'lab'},
+                    { text: 'Medical Imaging', hash: 'xray'},
+                    { text: 'Nuubo', hash: 'nuubo'},
                     { text: 'C/C++', hash: 'c++' },
                     { text: 'web', hash: 'web' },
                     { text: 'android', hash: 'android' },

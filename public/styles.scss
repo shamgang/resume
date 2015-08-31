@@ -170,6 +170,11 @@ html, body, .MainContainer, {
         font-family: Verdana, Geneva, sans-serif;
         line-height: 150%;
       }
+
+      iframe {
+        width: 100%;
+        height: 30vw;
+      }
     }
   }
 }
