@@ -232,14 +232,23 @@ var MainContent = React.createClass({
                             graphics and USB on the Android platform. I developed Java/Android code in Android Studio
                             with Gradle for UI development and I worked with C++, the Android NDK, JNI, and CMake for
                             system-level development.
+
+                            I have also experimented with Android personally and have created a prototype of an app
+                            for tracking events using the Google Maps, Stripe, and Facebook Android APIs, in tandem
+                            with the aforementioned web project.
                         </p>
                         <h2 id="c++">C/C++</h2>
                         <p>
-                            {'\u00a0\u00a0'}
+                            I have studied C and C++ throughout my coursework and have used these languages extensively
+                            in projects and in industry. In coursework, I have implemented many data structures
+                            and algorithms in C++, as well as operating system, file system, and distributed system
+                            functionality. I also worked with many C++ experts developing a large-scale, high-quality
+                            C++ code base at Amazon. I have used C to implement image processing,
+                            real-time DSP, embedded system communication, and processor simulation.
                         </p>
                         <h2 id="dsp">digital signal processing</h2>
                         <p>
-                            {'\u00a0\u00a0'} As part of my computer engineering coursework I've studied both analog
+                            As part of my computer engineering coursework I've studied both analog
                             and digital signal theory as well as applications of digital signal processing. My senior
                             design project was an embedded system for processing, visualizing, and analyzing music
                             signals. I produced this demo video of the project:
@@ -266,6 +275,40 @@ var MainContent = React.createClass({
                             This was my first experience with programming and it involved GUI creation, pitch detection,
                             and digital synthesis.
                         </p>
+                        <h2 id="embedded">embedded systems</h2>
+                        <p>
+                            I worked with embedded systems in my senior project, using a microcontroller, two DSP chips,
+                            an FPGA, and a combination of analog, SPI, I2C, I2S, and VGA communication. See more above
+                            in the <a href="#dsp">DSP</a> section.
+                        </p>
+                        <h2 id="parallel">parallel computing</h2>
+                        <p>
+                            I worked with GPU parallel computing for performance optimization at
+                            {'\u00a0'}<a href="#nuubo">Nuubo</a> and <a href="#xray">UofM</a>. I have also worked with
+                            parallelism in operating systems coursework building a concurrent disk scheduler,
+                            a thread library, an external pager, and a distributed file system.
+                        </p>
+                        <h2 id="cvml">cv and ml</h2>
+                        <p>
+                            I have studied computer vision and machine learning in my coursework. In computer vision I
+                            implemented projects in demosaicing and auto-alignment, height map reconstruction using
+                            photometric stereo, blob detection, panorama stitching using feature extraction and RANSAC,
+                            and handwritten digit recognition using convolutional neural networks, all in MATLAB.
+                            In machine learning, I studied linear classifiers and regression, support vector machines,
+                            decision trees, ensemble methods, collaborative filtering for recommender problems,
+                            clustering, and generative models. I implemented a tweet classifier to decide whether
+                            tweeted reviews are positive or negative using SVMs and cross-validation. I implemented
+                            facial image clustering using principal component analysis, K-means/medioids and
+                            hierarchical clustering. I built a parts-of-speech tagger using mixture models. I
+                            implemented all of this functionality in Python with the help of the scikit-learn and
+                            pyplot libraries.
+                        </p>
+                        <h2 id="agile">agile</h2>
+                        <p>
+                            I have worked in three separate occasions on teams practicing agile development. I am
+                            well acquainted with sprint planning, Scrum, and task/story workflows and I use these
+                            practices to organize, plan, and track my own and my team's development.
+                        </p>
                         <h1 id="music">music</h1>
                         <p>
                             {'\u00a0\u00a0'}
@@ -275,6 +318,7 @@ var MainContent = React.createClass({
                             in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                             cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
+                        <h1 id="writing">writing</h1>
                     </div>
                 </div>
             </div>
@@ -294,12 +338,12 @@ var MainContainer = React.createClass({
                     { text: 'Amazon Lab126', hash: 'lab'},
                     { text: 'Medical Imaging', hash: 'xray'},
                     { text: 'Nuubo', hash: 'nuubo'},
-                    { text: 'C/C++', hash: 'c++' },
                     { text: 'web', hash: 'web' },
                     { text: 'android', hash: 'android' },
+                    { text: 'C/C++', hash: 'c++' },
+                    { text: 'dsp', hash: 'dsp' },
                     { text: 'embedded systems', hash: 'embedded' },
                     { text: 'parallel computing', hash: 'parallel' },
-                    { text: 'dsp', hash: 'dsp' },
                     { text: 'cv and ml', hash: 'cvml' },
                     { text: 'agile', hash: 'agile' }
                 ]
