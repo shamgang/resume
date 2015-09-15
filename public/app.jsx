@@ -143,6 +143,7 @@ var MainContent = React.createClass({
     componentDidMount: function() {
         // Fade main content in after 4 seconds
         //fadeIn(this.refs.mainContent);
+        this.getDOMNode().scrollTop = $(window.location.hash).offset().top;
     },
     render: function() {
         // MainContent element contains a splash and scrolling content organized by headings and subheadings

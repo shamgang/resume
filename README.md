@@ -14,9 +14,9 @@ Logic aided by jQuery<br/>
 # Stories
 
 Create accessible navigation flow<br/>
-Scroll animation should cancel when user scrolls<br/>
-Multiple scrolls shouldn't queue<br/>
 Anchor link clicks should animate - need to find a way to properly listen to click events or override link behavior<br/>
+    Scroll animation should cancel when user scrolls<br/>
+    Multiple scrolls shouldn't queue<br/>
 All headings and subheadings in navbar should have corresponding content<br/>
 NavGroup open/close arrow should work independently of link<br/>
 Add parallax scrolling to splash<br/>
