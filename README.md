@@ -13,6 +13,7 @@ Logic aided by jQuery<br/>
 
 # Stories
 
+Enable intro animation with no hash, but make more performant<br/>
 Create accessible navigation flow<br/>
 Anchor link clicks should animate - need to find a way to properly listen to click events or override link behavior<br/>
     Scroll animation should cancel when user scrolls<br/>

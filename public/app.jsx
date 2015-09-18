@@ -216,7 +216,7 @@ var MainContent = React.createClass({
                             Besides the obvious use of JavaScript, HTML, and CSS, I use Angular, React, Node, jQuery,
                             Ruby on Rails, Bootstrap, Foundation, SQL, and PHP. I often use IntelliJ-based IDEs and
                             I've used Grunt for task running. This website is one example of my web development, and
-                            the source is hosted on GitHub here TODO.
+                            the source is hosted on GitHub <a target="_blank" href="https://github.com/shamgang/resume">here</a>.
                         </p>
                         <p>
                             I recently built an internal website at Amazon using Angular and Ruby on Rails.
