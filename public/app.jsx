@@ -177,7 +177,7 @@ var MainContent = React.createClass({
                             in X-Ray computed tomography using concepts in 3D mathematics and linear algebra
                             implemented with GPUs.
                         </p>
-                        <h2 id="lab">Amazon Lab126</h2>
+                        <h2 id="lab">amazon lab126</h2>
                         <p>
                             I've spent the last two summers as a software development intern at Amazon's Lab126. Last
                             summer, I worked on the Fire TV, prototyping features related to graphics, application
@@ -190,7 +190,7 @@ var MainContent = React.createClass({
                             data collection using HTML5, CSS, and AngularJS in a Ruby on Rails environment. I also
                             worked with Java and JNI to implement cloud interfaces.
                         </p>
-                        <h2 id="xray">UofM Medical Imaging</h2>
+                        <h2 id="xray">u of m medical imaging</h2>
                         <p>
                             During my sophomore summer I worked on a team headed by the internationally acclaimed
                             {'\u00a0'}<a target="_blank" href="http://web.eecs.umich.edu/~fessler/">Professor Jeffrey Fessler</a>
@@ -202,7 +202,7 @@ var MainContent = React.createClass({
                             This project involved heavy optimization, with every line of code written to maximize
                             efficiency with respect to the hardware.
                         </p>
-                        <h2 id="nuubo">Nuubo</h2>
+                        <h2 id="nuubo">nuubo</h2>
                         <p>
                             During my freshman summer I worked in Madrid at a wearable medical technology startup called
                             {'\u00a0'}<a target="_blank" href="http://www.nuubo.com/">Nuubo</a> that has created
@@ -224,7 +224,7 @@ var MainContent = React.createClass({
                             {'\u00a0'}<a target="_blank" href="https://www.recourse.co">Recourse.co</a>
                             {'\u00a0'}with a particular focus on responsiveness and cross-device compatibility.
                             I have also worked on personal projects, including an event tracking and crowdfunding
-                            website built with APIs from Google Maps, Stripe, and Facebook TODO.
+                            website built with APIs from Google Maps, Stripe, and Facebook.
                         </p>
                         <h2 id="android">android</h2>
                         <p>
@@ -254,7 +254,7 @@ var MainContent = React.createClass({
                             design project was an embedded system for processing, visualizing, and analyzing music
                             signals. I produced this demo video of the project:
                         </p>
-                        <iframe
+                        <iframe className="youtube"
                             src="//www.youtube.com/embed/lzsdMJA22CA?rel=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen>
                         </iframe>
                         <p>
@@ -269,7 +269,7 @@ var MainContent = React.createClass({
                             My freshman year, I created a music synthesizer and transcriber in MATLAB. The presentation
                             video for that project is here:
                         </p>
-                        <iframe
+                        <iframe className="youtube"
                             src="//www.youtube.com/embed/Hl607Lvl_D4?rel=0&showinfo=0&autohide=1&start=260" frameborder="0" allowfullscreen>
                         </iframe>
                         <p>
@@ -312,14 +312,103 @@ var MainContent = React.createClass({
                         </p>
                         <h1 id="music">music</h1>
                         <p>
-                            {'\u00a0\u00a0'}
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            {'\u00a0\u00a0'} I am a sound engineer, music producer, computer musician, music programmer,
+                            composer, and performer. I study performing arts technology at the University of Michigan with a
+                            focus in sound engineering. My coursework includes composition, computer music, sound
+                            recording, sound reinforcement, studio production, sound for theater, and jazz improvisation.
+                            I work on the audio/video staff at the university's
+                            {'\u00a0'}<a href="http://www.lib.umich.edu/audio-studio-digital-media-commons">audio</a> and
+                            {'\u00a0'}<a href="http://www.lib.umich.edu/video-studio-digital-media-commons">video</a> studios
+                            at the Duderstadt Center, which involves installing and maintaining industry-grade
+                            equipment, teaching training classes in the studios, and working on
+                            university audio and video recording projects. I have been a performer on
+                            piano, guitar, bass, and drums for about a decade and I have played jazz and other
+                            styles in a professional setting.
                         </p>
-                        <h1 id="writing">writing</h1>
+                        <h2 id="production">production/engineering</h2>
+                        <p>
+                            As a producer/sound engineer I have brought many groups and individuals into the university
+                            studios to record using the API Vision consoles and a large selection of recording and
+                            processing gear. I am also familiar with a more in-the-box home studio approach.
+                            I use tools like Ableton Live, Pro Tools, Logic, Final Cut, and Melodyne for sound production.
+                            Recently, I recorded raps and mixed samples/raps for this track as part of my friend's
+                            mixtape, as a short teaser for the rest of the tape which will be available soon:
+                        </p>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/220191313&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <p>
+                        A lot of the recordings I've done in the past few years have yet to be
+                            released as part of artists' larger projects, but some projects I worked on years ago
+                            before studying sound engineering are available:
+                        </p>
+                        <p>
+                            "D.I.Y." is a jazz track that I composed in 2012 for a four-piece jazz band, and proceeded
+                            to perform, record, mix, and edit on my own.
+                        </p>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/170481522&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <p>
+                            Below are some other tracks I recorded and mixed at that time during my first exploration
+                            of the studio. I performed Concerto Romantique, and played bass on the other two tracks.
+                        </p>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/173370075&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/173370258&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/173370369&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <p>
+                            I have also worked on some sound for video. I produced both the video and audio for the
+                            EECS 452 project demo video as shown above in the <a href="#dsp">DSP</a> section. I also
+                            did a re-edit of this video for the U of M Campus Farm. I was responsible for re-recording
+                            narration, doctoring the pre-mixed audio that could not be re-recorded, and then re-editing
+                            and mixing the parts for better audibility and flow. I also worked on some of the video editing
+                            and added credits in Final Cut.
+                        </p>
+                        <iframe className="youtube" frameborder="0" allowfullscreen
+                            src="https://www.youtube.com/embed/bguLtEvmgGQ">
+                        </iframe>
+                        <p>
+                            Some more of my production work is included in the composition section below.
+                        </p>
+                        <h2 id="composition">composition</h2>
+                        <p>
+                            In addition to recording and mixing, I like to compose for both instruments and the computer.
+                            I use tools like DAWs, Max/MSP, Sibelius, Blender, Unity, and web code for composing.
+                            Below are some compositions I have made in my coursework. The field compositions are made
+                            entirely of recordings from a stereo portable recorder. "Mthmtcs" is made from both recordings
+                            and software instruments, and "Hydroculture" is made entirely from one short "seed" of MIDI
+                            information manipulated in various ways.
+                        </p>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182283929&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182281518&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182279372&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182282519&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <p>
+                            Here are a few compositions of mine for instruments. I wrote "DIY" for guitar, bass, and piano,
+                            and a recording can be found above in the <a href="#production">production</a> section.
+                            I wrote "White Knuckles" for piano as part of a composition class, and it explores frantic
+                            dissonance, moving in and out of tonality, and complex linear two-hand rhythms.
+                        </p>
+                        <iframe width="100%" height="480"
+                            src="https://drive.google.com/a/umich.edu/file/d/0B2vw2frJrQnRVXFuUFp3TTZSOEk/preview">
+                        </iframe>
+                        <iframe width="100%" height="480"
+                            src="https://drive.google.com/file/d/0B2vw2frJrQnRd211TUZCdXJzTTg/preview">
+                        </iframe>
                     </div>
                 </div>
             </div>
@@ -336,9 +425,9 @@ var MainContainer = React.createClass({
                 text: 'software',
                 hash: 'software',
                 subheadings: [
-                    { text: 'Amazon Lab126', hash: 'lab'},
-                    { text: 'Medical Imaging', hash: 'xray'},
-                    { text: 'Nuubo', hash: 'nuubo'},
+                    { text: 'amazon lab126', hash: 'lab'},
+                    { text: 'medical imaging', hash: 'xray'},
+                    { text: 'nuubo', hash: 'nuubo'},
                     { text: 'web', hash: 'web' },
                     { text: 'android', hash: 'android' },
                     { text: 'C/C++', hash: 'c++' },
@@ -356,14 +445,6 @@ var MainContainer = React.createClass({
                     { text: 'production/engineering', hash: 'production' },
                     { text: 'composition', hash: 'composition' },
                     { text: 'performance', hash: 'performance' }
-                ]
-            },
-            {
-                text: 'writing',
-                hash: 'writing',
-                subheadings: [
-                    { text: 'Michigan Daily', hash: 'daily'},
-                    { text: 'essays', hash: 'essays'}
                 ]
             }
         ];
