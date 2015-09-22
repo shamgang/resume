@@ -13,6 +13,8 @@ Logic aided by jQuery<br/>
 
 # Stories
 
+Set up grunt with sass to deploy to heroku<br/>
+    Remove styles.css from repo after this is complete<br/>
 Enable intro animation with no hash, but make more performant<br/>
 Create accessible navigation flow<br/>
 Anchor link clicks should animate - need to find a way to properly listen to click events or override link behavior<br/>
@@ -30,6 +32,7 @@ Make embed objects have max width and center<br/>
 # Bugs
 
 Clicking heading triggers click on all subheadings<br/>
+Error in load-jump code if no hash<br/>
 
 # Questions
 

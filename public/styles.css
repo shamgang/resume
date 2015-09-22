@@ -1,0 +1,133 @@
+/* styles.scss */
+html, body, .MainContainer {
+  height: 100%;
+  margin: 0; }
+
+.content {
+  position: relative;
+  height: 100%;
+  overflow: hidden; }
+
+.portrait {
+  position: absolute;
+  width: 15em;
+  height: 10em;
+  background-image: url("portrait.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0; }
+  .portrait .speech {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url("speech.png");
+    background-size: contain;
+    background-position: center 200px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: white; }
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4); }
+
+.navBar {
+  position: absolute;
+  width: 15em;
+  top: 10em;
+  bottom: 0;
+  border-right: 4px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  z-index: 1;
+  overflow-y: auto; }
+  .navBar .navTitle {
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 3px solid rgba(196, 235, 255, 0.5);
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9); }
+  .navBar a {
+    text-decoration: none; }
+  .navBar .navGroup {
+    box-sizing: border-box;
+    position: relative;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding: 0.5em 0 0.75em 0.75em;
+    border-bottom: 3px solid rgba(196, 235, 255, 0.5); }
+    .navBar .navGroup.opened {
+      background-color: rgba(196, 235, 255, 0.5); }
+    .navBar .navGroup:hover {
+      background-color: rgba(196, 235, 255, 0.7); }
+    .navBar .navGroup:active {
+      background-color: #c4ebff; }
+    .navBar .navGroup .arrowImg {
+      width: 1em;
+      position: absolute;
+      right: 7px;
+      top: 0.9em;
+      height: 0.5em; }
+  .navBar .navLink {
+    box-sizing: border-box;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    text-align: right;
+    padding: 0.5em 1em 0.75em 0;
+    border-bottom: 3px solid rgba(196, 235, 255, 0.5); }
+    .navBar .navLink:hover {
+      background-color: rgba(196, 235, 255, 0.7); }
+    .navBar .navLink:active {
+      background-color: #c4ebff; }
+  .navBar .navPad {
+    height: 1.5em; }
+
+.mainContent {
+  position: absolute;
+  left: 15em;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow-y: auto;
+  background-image: url("sunset_mackinac_bridge_crop.jpg");
+  background-size: auto 25em; }
+  .mainContent .mainScroller {
+    position: relative; }
+    .mainContent .mainScroller .splash {
+      box-sizing: border-box;
+      height: 10em;
+      text-align: center;
+      color: white;
+      font-family: "Lucida Console", Monaco, monospace;
+      font-size: 2.5em;
+      padding: 5em 2em 0 2em; }
+    .mainContent .mainScroller .mainText {
+      padding: 2em 10em;
+      background-color: white; }
+      .mainContent .mainScroller .mainText h1 {
+        font-size: 3em;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.075); }
+      .mainContent .mainScroller .mainText h2 {
+        margin-top: 1.25em;
+        font-family: Verdana, Geneva, sans-serif; }
+      .mainContent .mainScroller .mainText p {
+        font-size: 1em;
+        font-family: Verdana, Geneva, sans-serif;
+        line-height: 150%; }
+      .mainContent .mainScroller .mainText .youtube {
+        width: 100%;
+        height: 30vw; }
+
+/*# sourceMappingURL=styles.css.map */
