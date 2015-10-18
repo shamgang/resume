@@ -327,15 +327,47 @@ var MainContent = React.createClass({
                         </p>
                         <h2 id="production">production/engineering</h2>
                         <p>
-                            As a producer/sound engineer I have brought many groups and individuals into the university
-                            studios to record using the API Vision consoles and a large selection of recording and
-                            processing gear. I am also familiar with a more in-the-box home studio approach.
-                            I use tools like Ableton Live, Pro Tools, Logic, Final Cut, and Melodyne for sound production.
-                            Recently, I recorded raps and mixed samples/raps for this track as part of my friend's
-                            mixtape, as a short teaser for the rest of the tape which will be available soon:
+                            As a producer/sound engineer I have recorded many groups and individuals in the university
+                            studios using the API Vision consoles and a large selection of recording and
+                            processing gear. I use software like Ableton Live, Pro Tools, Logic, Final Cut, and Melodyne
+                            for recording, editing, and mixing. I recently brought in a jazz band to record a demo
+                            for the Jazz Ahead residency application. Those tracks are below.
                         </p>
                         <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/220191313&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228967429%3Fsecret_token%3Ds-decyS&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228967498%3Fsecret_token%3Ds-wvvWY&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228967439%3Fsecret_token%3Ds-X3VUx&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228967605%3Fsecret_token%3Ds-9v2Uu&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <p>
+                            I am also familiar with a more in-the-box home studio approach.
+                            Recently, I recorded vocals for a mixtape using a low-cost
+                            bedroom rig and then completed the production both at home and in the university studios.
+                            Those tracks are below:
+                        </p>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708877&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708873&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708868&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708865&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708861&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708856&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
                         </iframe>
                         <p>
                         A lot of the recordings I've done in the past few years have yet to be
