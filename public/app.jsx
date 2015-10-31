@@ -330,9 +330,21 @@ var MainContent = React.createClass({
                             As a producer/sound engineer I have recorded many groups and individuals in the university
                             studios using the API Vision consoles and a large selection of recording and
                             processing gear. I use software like Ableton Live, Pro Tools, Logic, Final Cut, and Melodyne
-                            for recording, editing, and mixing. I recently brought in a jazz band to record a demo
+                            for recording, editing, and mixing. I recently brought in two jazz bands to record demos
                             for the Jazz Ahead residency application. Those tracks are below.
                         </p>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230953582%3Fsecret_token%3Ds-LZSEF&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230953590%3Fsecret_token%3Ds-0FLi7&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230953585%3Fsecret_token%3Ds-l2h02&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230953587%3Fsecret_token%3Ds-grae7&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        </iframe>
                         <iframe width="100%" height="166" scrolling="no" frameborder="no"
                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228967429%3Fsecret_token%3Ds-decyS&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
                         </iframe>
@@ -349,7 +361,9 @@ var MainContent = React.createClass({
                             I am also familiar with a more in-the-box home studio approach.
                             Recently, I recorded vocals for a mixtape using a low-cost
                             bedroom rig and then completed the production both at home and in the university studios.
-                            Those tracks are below:
+                            Those tracks are below, and click
+                            {'\u00a0'}<a target="_blank" href="http://www.stanforddaily.com/2015/10/22/connie-k-daylight-savings/">here</a>
+                            {'\u00a0'}to read an article in the Stanford Daily about the release.
                         </p>
                         <iframe width="100%" height="166" scrolling="no" frameborder="no"
                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708877&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
@@ -370,9 +384,8 @@ var MainContent = React.createClass({
                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708856&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
                         </iframe>
                         <p>
-                        A lot of the recordings I've done in the past few years have yet to be
-                            released as part of artists' larger projects, but some projects I worked on years ago
-                            before studying sound engineering are available:
+                        Here are some performance projects I worked on years ago, which were also my
+                        first forays into sound engineering:
                         </p>
                         <p>
                             "D.I.Y." is a jazz track that I composed in 2012 for a four-piece jazz band, and proceeded
