@@ -315,7 +315,7 @@ var MainContent = React.createClass({
                             {'\u00a0\u00a0'} I am a sound engineer, music producer, computer musician, music programmer,
                             composer, and performer. I study performing arts technology at the University of Michigan with a
                             focus in sound engineering. My coursework includes composition, computer music, sound
-                            recording, sound reinforcement, studio production, sound for theater, and jazz improvisation.
+                            recording, sound reinforcement, studio production, sound for theatre, and jazz improvisation.
                             I work on the audio/video staff at the university's
                             {'\u00a0'}<a href="http://www.lib.umich.edu/audio-studio-digital-media-commons">audio</a> and
                             {'\u00a0'}<a href="http://www.lib.umich.edu/video-studio-digital-media-commons">video</a> studios
@@ -383,6 +383,14 @@ var MainContent = React.createClass({
                         <iframe width="100%" height="166" scrolling="no" frameborder="no"
                             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708856&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
                         </iframe>
+                        <p>
+                            I was on the production team for the University of Michigan School of Music, Theatre & Dance's
+                            production of Shakespeare's Henry IV: Part 1. I was one of two composers and three sound
+                            designers, participating in design meetings, production meetings, and the tech process
+                            to create and integrate sound into the play and into the space using 12 channels of audio
+                            at the Power Center.
+                        </p>
+                        <img src={"henry_iv_program.jpeg"} className="programNotes"/>
                         <p>
                         Here are some performance projects I worked on years ago, which were also my
                         first forays into sound engineering:
@@ -454,6 +462,43 @@ var MainContent = React.createClass({
                         <iframe width="100%" height="480"
                             src="https://drive.google.com/file/d/0B2vw2frJrQnRd211TUZCdXJzTTg/preview">
                         </iframe>
+                        <h2 id="performance">performance</h2>
+                        <p>
+                            I've been performing from a young age, mostly in ensemble situations. I've been on stage
+                            playing classical, jazz, funk, rock, free improvisation, and other styles. My primary
+                            instrument is guitar, and I've also studied and performed on drums, electric bass, and
+                            (rarely) keyboards. I focus on jazz, improvisation, and jazz-based styles. Some of my
+                            performance is featured in tracks that I produced, shown above in the
+                            {'\u00a0'}<a href="#production">production</a> section.
+                        </p>
+                        <p>
+                            Below is a video of a performance of the second and third movements of Astor Piazzolla's
+                            Histoire du Tango as part of my friend's recital.
+                        </p>
+                        <iframe className="youtube" frameborder="0" allowfullscreen
+                            src="https://www.youtube.com/embed/gWqmQyDVqA4">
+                        </iframe>
+                        <p>
+                            I also dabbled in other types of stage performance as part of my teenage explorations:
+                            I wrote and performed sketch comedy with friends, and I directed, taught, and performed
+                            amateur group dance for fun and education. Below is a performance of a dance from the film
+                            Lagaan that I adapted for the stage and taught to classmates, and a video from a spirit
+                            rally performance including other adapted choreographies. While amateur, these performances
+                            were good experiences in group organization and stage direction for relatively large (500+)
+                            audiences.
+                        </p>
+                        <iframe className="youtube" frameborder="0" allowfullscreen
+                            src="https://www.youtube.com/embed/_XysOXOVTyI">
+                        </iframe>
+                        <iframe className="youtube" frameborder="0" allowfullscreen
+                            src="https://www.youtube.com/embed/5-d4uociv6E">
+                        </iframe>
+                        <p>
+                            Some of my early jazz performance was recorded in high school and uploaded to
+                            {'\u00a0'}<a target="_blank" href="https://www.youtube.com/user/anwoz1/videos">this</a>
+                            {'\u00a0'}YouTube channel.
+                        </p>
+
                     </div>
                 </div>
             </div>

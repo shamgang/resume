@@ -129,5 +129,7 @@ html, body, .MainContainer {
       .mainContent .mainScroller .mainText .youtube {
         width: 100%;
         height: 30vw; }
+      .mainContent .mainScroller .mainText .programNotes {
+        width: 50%; }
 
 /*# sourceMappingURL=styles.css.map */
