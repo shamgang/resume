@@ -28,6 +28,7 @@ Should jump to hash on page load and open corresponding NavGroup<br/>
 Should link to relevant external information, such as web frameworks<br/>
 Rationalize lower vs. upper case and make consistent<br/>
 Make embed objects have max width and center<br/>
+As content builds, remove old, less relevant content<br/>
 
 # Bugs
 

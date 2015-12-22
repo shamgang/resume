@@ -427,6 +427,16 @@ var MainContent = React.createClass({
                             src="https://www.youtube.com/embed/bguLtEvmgGQ">
                         </iframe>
                         <p>
+                            I did some film in high school for spirit events, which was amateur and mostly created for an
+                            internal audience, but was a huge learning experience for me in terms of storyboarding,
+                            screenwriting, audio/video recording and editing, sound for film, and directing. I made the
+                            music video shown below with a friend, driving the creative process from conception to
+                            release in a few weeks with very limited help and resources.
+                        </p>
+                        <iframe className="youtube" frameborder="0" allowfullscreen
+                            src="https://www.youtube.com/embed/tfWqQgqbKuw">
+                        </iframe>
+                        <p>
                             Some more of my production work is included in the composition section below.
                         </p>
                         <h2 id="composition">composition</h2>
