@@ -233,8 +233,12 @@ var MainContent = React.createClass({
                             graphics and USB on the Android platform. I developed Java/Android code in Android Studio
                             with Gradle for UI development and I worked with C++, the Android NDK, JNI, and CMake for
                             system-level development.
-
-                            I have also experimented with Android personally and have created a prototype of an app
+                        </p>
+                        <p>
+                            I have also experimented with Android personally. I am creating a transaction-tracking
+                            application called EasyMoney which originated as a need for a quick, simple budgeting
+                            tool and as an exercise in product design and best practices for user-facing Android code.
+                            The app should be in the Google Play Store by the end of June. I have also worked on an app
                             for tracking events using the Google Maps, Stripe, and Facebook Android APIs, in tandem
                             with the aforementioned web project.
                         </p>
@@ -246,6 +250,23 @@ var MainContent = React.createClass({
                             functionality. I also worked with many C++ experts developing a large-scale, high-quality
                             C++ code base at Amazon. I have used C to implement image processing,
                             real-time DSP, embedded system communication, and processor simulation.
+                        </p>
+                        <h2 id="matlab">matlab</h2>
+                        <p>
+                            I have used MATLAB extensively in
+                            {'\u00a0'}<a href="#dsp">DSP</a>{'\u00a0'}
+                            work for prototyping signal processing, signal generation, UI, and matrix-based computation.
+                            I have also used MATLAB and extra toolkits for
+                            {'\u00a0'}<a href="#cvml">computer vision</a>, developing object trackers, panorama stitchers,
+                            neural networks, and other applications.
+                        </p>
+                        <h2 id="python">python</h2>
+                        <p>
+                            I have used Python for
+                            {'\u00a0'}<a href="#cvml">machine learning</a>, implementing face classifiers,
+                            parts-of-speech taggers, and many other learning algorithms. I also used Python through
+                            Blender to automate the animation process of a short animated audio/video piece I made
+                            as a side project. See the <a href="#composition">composition</a> section.
                         </p>
                         <h2 id="dsp">digital signal processing</h2>
                         <p>
@@ -327,35 +348,51 @@ var MainContent = React.createClass({
                         </p>
                         <h2 id="production">production/engineering</h2>
                         <p>
-                            As a producer/sound engineer I have recorded many groups and individuals in the university
+                            As a producer/sound engineer I have recorded many groups and individuals in the University of Michigan
                             studios using the API Vision consoles and a large selection of recording and
-                            processing gear. I use software like Ableton Live, Pro Tools, Logic, Final Cut, and Melodyne
-                            for recording, editing, and mixing. I recently brought in two jazz bands to record demos
+                            processing gear. I work as a staff engineer / tech / instructor at the studios and I also
+                            use them extensively for class and personal projects. I use software like Ableton Live, Pro Tools, Logic, Final Cut, and Melodyne
+                            for recording, editing, and mixing.
+                        </p>
+                        <p>
+                            I was the lead recording engineer and a mix engineer on some sessions for jazz professor
+                            Dennis Wilson and his trombone / vocal ensembles. Those tracks are below:
+                        </p>
+                        <iframe width="100%" height="300" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/220530569&amp;auto_play=false&amp;hide_related=true&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true;show_artwork=false">
+                        </iframe>
+                        <p>
+                            I was the assistant recording engineer and Pro Tools operator on new material coming up from
+                            {'\u00a0'}<a target="_blank" href="http://www.losgatosmusic.com/">Los Gatos</a>, a local salsa band
+                            featuring U of M faculty. I also won the U of M AES student chapter's Mix/Remix competition in
+                            the mix section, and will have one of my mixes featured on Naked Dance's next album release.
+                            Naked Dance is a genre-bending improvisational "jazz" group comprised of U of M faculty.
+                        </p>
+                        <p>
+                            I recorded mixed, and mastered singer and actor Noah Weisbart's song "Da-yoo" featuring him
+                            on voice and piano and U of M jazz students Noah Henriksson, Mike Perlman, and Everett Reid
+                            on trumpet, bass, and piano. On this recording I took more of a pop approach:
+                        </p>
+                        <iframe width="100%" height="300" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/262556824&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true;show_artwork=false">
+                        </iframe>
+                        <p>
+                            I recorded jazz singer <a target="_blank" href="emmalee-sings.com">Emma Aboukasm</a> with
+                            {'\u00a0'}<a target="_blank" href="https://owlgame.bandcamp.com/">Lena Sutter</a> and produced a
+                            video of our session:
+                        </p>
+                        <iframe className="youtube"
+                            src="https://www.youtube.com/embed/Cdfxld7pj5k" frameborder="0" allowfullscreen>
+                        </iframe>
+                        <p>
+                            I also brought in two jazz bands to record demos
                             for the Jazz Ahead residency application. Those tracks are below.
                         </p>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230953582%3Fsecret_token%3Ds-LZSEF&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        <iframe width="100%" height="300" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/160790453%3Fsecret_token%3Ds-oD2fc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true;show_artwork=false">
                         </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230953590%3Fsecret_token%3Ds-0FLi7&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
-                        </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230953585%3Fsecret_token%3Ds-l2h02&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
-                        </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/230953587%3Fsecret_token%3Ds-grae7&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
-                        </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228967429%3Fsecret_token%3Ds-decyS&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
-                        </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228967498%3Fsecret_token%3Ds-wvvWY&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
-                        </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228967439%3Fsecret_token%3Ds-X3VUx&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
-                        </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228967605%3Fsecret_token%3Ds-9v2Uu&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        <iframe width="100%" height="300" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/150943264%3Fsecret_token%3Ds-kIoGH&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true;show_artwork=false">
                         </iframe>
                         <p>
                             I am also familiar with a more in-the-box home studio approach.
@@ -365,26 +402,22 @@ var MainContent = React.createClass({
                             {'\u00a0'}<a target="_blank" href="http://www.stanforddaily.com/2015/10/22/connie-k-daylight-savings/">here</a>
                             {'\u00a0'}to read an article in the Stanford Daily about the release.
                         </p>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708877&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
-                        </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708873&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
-                        </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708868&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
-                        </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708865&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
-                        </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708861&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
-                        </iframe>
-                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/227708856&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
+                        <iframe width="100%" height="300" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/153405822&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true">
                         </iframe>
                         <p>
-                            I was on the production team for the University of Michigan School of Music, Theatre & Dance's
+                            I was sound designer and supervisor for
+                            {'\u00a0'}<a target="_blank" href="http://ptguild2.aaps.k12.mi.us/index.html">Pioneer Theatre Guild's</a>{'\u00a0'}
+                            production of Rock of Ages. For the show, I used the Allen &amp; Heath iLive house system to
+                            set up reinforcement for a full rock band and 20 scripted characters, offstage vocal booths,
+                            sound effects, record mics, four monitor mixes, video feeds, and record mixes. I composed
+                            the sound effects and managed cues for the effects and live sound. During the show, I live
+                            mixed the band and actors from the iLive Surface while calling cues for effects and
+                            live sound. I managed a crew of 4 high school students who helped with micing, setup,
+                            and cue operation.
+                        </p>
+                        <p>
+                            I was on the production team for the University of Michigan School of Music, Theatre &amp; Dance's
                             production of Shakespeare's Henry IV: Part 1. I was one of two composers and three sound
                             designers, participating in design meetings, production meetings, and the tech process
                             to create and integrate sound into the play and into the space using 12 channels of audio
@@ -443,6 +476,33 @@ var MainContent = React.createClass({
                         <p>
                             In addition to recording and mixing, I like to compose for both instruments and the computer.
                             I use tools like DAWs, Max/MSP, Sibelius, Blender, Unity, and web code for composing.
+                        </p>
+                        <p>
+                            As a side project in 2015-2016, I made an audio/video piece called "def orbit():" featuring
+                            a 3D animation and original computer music. I used Blender for modeling and animation,
+                            and Blender's Python API to automate the animation and object duplication processes. Much
+                            of the visual timing is generated through Python using the MIDI information that was used
+                            to create the music, so the audio and video are programatically related. The piece was
+                            featured at the Performing Arts Technology Showcase at the UofM SMTD and at the inaugural
+                            {'\u00a0'}<a target="_blank" href="http://threadsfestival.com/">Threads All Arts Festival</a>
+                            . Check it out (best experienced fullscreen, loud, in the dark):
+                        </p>
+                        <iframe className="youtube" frameborder="0" allowfullscreen
+                            src="https://www.youtube.com/embed/DSIh12SkbcA">
+                        </iframe>
+                        <p>
+                            As a member of U of M's Digital Music Ensemble, I helped to ideate, design, and create our
+                            April 2016 installation "Gypsy Pond", in which we made an embedded system out of a prepared
+                            piano using copper tape, Pure Data, an Arduino, and relays. The piano triggered sound
+                            and movement in structures we created to float on the pond. Below are some excerpts:
+                        </p>
+                        <iframe className="youtube" frameborder="0" allowfullscreen
+                            src="https://www.youtube.com/embed/DGiOgMyf52c">
+                        </iframe>
+                        <iframe className="youtube" frameborder="0" allowfullscreen
+                            src="https://www.youtube.com/embed/3CuQ6agTcXg">
+                        </iframe>
+                        <p>
                             Below are some compositions I have made in my coursework. The field compositions are made
                             entirely of recordings from a stereo portable recorder. "Mthmtcs" is made from both recordings
                             and software instruments, and "Hydroculture" is made entirely from one short "seed" of MIDI
@@ -531,6 +591,8 @@ var MainContainer = React.createClass({
                     { text: 'web', hash: 'web' },
                     { text: 'android', hash: 'android' },
                     { text: 'C/C++', hash: 'c++' },
+                    { text: 'matlab', hash: 'matlab' },
+                    { text: 'python', hash: 'python' },
                     { text: 'dsp', hash: 'dsp' },
                     { text: 'embedded systems', hash: 'embedded' },
                     { text: 'parallel computing', hash: 'parallel' },
