@@ -235,10 +235,13 @@ var MainContent = React.createClass({
                             system-level development.
                         </p>
                         <p>
-                            I have also experimented with Android personally. I am creating a transaction-tracking
+                            I have also experimented with Android personally. I created a transaction-tracking
                             application called EasyMoney which originated as a need for a quick, simple budgeting
                             tool and as an exercise in product design and best practices for user-facing Android code.
-                            The app should be in the Google Play Store by the end of June. I have also worked on an app
+                            The app is published in the
+                            {'\u00a0'}<a target="_blank" href="https://play.google.com/store/apps/details?id=com.shamik.easymoney.app&hl=en">Google Play Store</a>.{'\u00a0'}
+                            The source is available for browsing on <a target="_blank" href="https://github.com/shamgang/easymoney">GitHub</a>.{'\u00a0'}
+                            I have also worked on an app
                             for tracking events using the Google Maps, Stripe, and Facebook Android APIs, in tandem
                             with the aforementioned web project.
                         </p>
