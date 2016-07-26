@@ -156,10 +156,9 @@ var MainContent = React.createClass({
                     <div className="mainText">
                         <h1 id="me">me</h1>
                         <p>
-                            {'\u00a0\u00a0'} Hi, I'm Shamik. I'm from Southeast Michigan and I go to the University of
-                            Michigan in Ann Arbor. I study computer engineering and sound engineering at school and I
-                            work as a product builder, software engineer, UI developer, musician, composer, and sound
-                            engineer.
+                            {'\u00a0\u00a0'} Hi, I'm Shamik. I'm a product builder, software engineer, UI developer,
+                            musician, composer, producer and sound engineer. I'm from Southeast Michigan and I studied
+                            computer engineering and sound engineering at the University of Michigan in Ann Arbor.
                         </p>
                         <h1 id="software">software</h1>
                         <p>
@@ -179,12 +178,13 @@ var MainContent = React.createClass({
                         </p>
                         <h2 id="lab">amazon lab126</h2>
                         <p>
-                            I've spent the last two summers as a software development intern at Amazon's Lab126. Last
-                            summer, I worked on the Fire TV, prototyping features related to graphics, application
+                            I'm currently a software development engineer at Amazon working on emerging tech at the devices
+                            lab Lab126. I was an intern at Lab during the summers of 2014 and 2015 as well. In 2014,
+                            I worked on the Fire TV, prototyping features related to graphics, application
                             cacheing, USB storage, and benchmarking, which also had implications for the then-unreleased Fire TV
                             Stick. I also worked on the main Android UI. I spent time with Android, Java, JNI,
-                            C/C++, CMake, Android NDK toolchains, Android Studio, Gradle, and Git. This summer, I worked
-                            on a yet unreleased product, designing tools for development and data collection. I designed
+                            C/C++, CMake, Android NDK toolchains, Android Studio, Gradle, and Git. In 2015, I worked
+                            on an emerging product, designing tools for development and data collection. I designed
                             and built a many-threaded UI in C++ using Qt, CMake to enable user-friendly presentation and
                             analysis of complex product code modules. I also designed and built a website for subjective
                             data collection using HTML5, CSS, and AngularJS in a Ruby on Rails environment. I also
@@ -337,13 +337,15 @@ var MainContent = React.createClass({
                         <h1 id="music">music</h1>
                         <p>
                             {'\u00a0\u00a0'} I am a sound engineer, music producer, computer musician, music programmer,
-                            composer, and performer. I study performing arts technology at the University of Michigan with a
-                            focus in sound engineering. My coursework includes composition, computer music, sound
+                            composer, and performer. I have recorded and mixed a lot of jazz, and I've worked recently
+                            to create hip-hop, rock, pop, electronic, classical, and folk music as well. I studied performing
+                            arts technology at the University of Michigan with a
+                            focus in sound engineering. My coursework included composition, computer music, sound
                             recording, sound reinforcement, studio production, sound for theatre, and jazz improvisation.
-                            I work on the audio/video staff at the university's
+                            I worked on the audio/video staff at the university's
                             {'\u00a0'}<a href="http://www.lib.umich.edu/audio-studio-digital-media-commons">audio</a> and
                             {'\u00a0'}<a href="http://www.lib.umich.edu/video-studio-digital-media-commons">video</a> studios
-                            at the Duderstadt Center, which involves installing and maintaining industry-grade
+                            at the Duderstadt Center, which involved installing and maintaining industry-grade
                             equipment, teaching training classes in the studios, and working on
                             university audio and video recording projects. I have been a performer on
                             piano, guitar, bass, and drums for about a decade and I have played jazz and other
@@ -351,10 +353,11 @@ var MainContent = React.createClass({
                         </p>
                         <h2 id="production">production/engineering</h2>
                         <p>
-                            As a producer/sound engineer I have recorded many groups and individuals in the University of Michigan
+                            As a producer/sound engineer I work regularly with Pro Tools and I like to frequent whatever
+                            studios I can get to. I have recorded many groups and individuals in the University of Michigan
                             studios using the API Vision consoles and a large selection of recording and
-                            processing gear. I work as a staff engineer / tech / instructor at the studios and I also
-                            use them extensively for class and personal projects. I use software like Ableton Live, Pro Tools, Logic, Final Cut, and Melodyne
+                            processing gear. I worked as a staff engineer / tech / instructor at the studios and I also
+                            used them extensively for class and personal projects. I use software like Ableton Live, Pro Tools, Logic, Final Cut, and Melodyne
                             for recording, editing, and mixing.
                         </p>
                         <p>
