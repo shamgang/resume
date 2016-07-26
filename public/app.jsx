@@ -485,8 +485,9 @@ var MainContent = React.createClass({
                             a 3D animation and original computer music. I used Blender for modeling and animation,
                             and Blender's Python API to automate the animation and object duplication processes. Much
                             of the visual timing is generated through Python using the MIDI information that was used
-                            to create the music, so the audio and video are programatically related. The piece was
-                            featured at the Performing Arts Technology Showcase at the UofM SMTD and at the inaugural
+                            to create the music, so the audio and video are programatically related. The scripts are
+                            available <a target="_blank" href="https://github.com/shamgang/def-orbit">here</a>.
+                            The piece was featured at the Performing Arts Technology Showcase at the UofM SMTD and at the inaugural
                             {'\u00a0'}<a target="_blank" href="http://threadsfestival.com/">Threads All Arts Festival</a>
                             . Check it out (best experienced fullscreen, loud, in the dark):
                         </p>
