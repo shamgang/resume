@@ -179,7 +179,13 @@ var MainContent = React.createClass({
                         <h2 id="lab">amazon lab126</h2>
                         <p>
                             I'm currently a software development engineer at Amazon working on emerging tech at the devices
-                            lab Lab126. I was an intern at Lab during the summers of 2014 and 2015 as well. In 2014,
+                            lab Lab126. I work on a frameworks team building systems to execute cutting-edge,
+                            resource-intensive algorithms and to differentiate Amazon's devices. I work in many
+                            languages daily, most frequently JavaScript, Python, and Java. In addition to my framework
+                            contributions I am building a web UI using Angular 2 with Typescript and a Node backend.
+                        </p>
+                        <p>
+                            I was an intern at Lab during the summers of 2014 and 2015 as well. In 2014,
                             I worked on the Fire TV, prototyping features related to graphics, application
                             cacheing, USB storage, and benchmarking, which also had implications for the then-unreleased Fire TV
                             Stick. I also worked on the main Android UI. I spent time with Android, Java, JNI,
@@ -213,13 +219,17 @@ var MainContent = React.createClass({
                         <h2 id="web">web</h2>
                         <p>
                             I've been involved with web development for personal and professional projects.
-                            Besides the obvious use of JavaScript, HTML, and CSS, I use Angular, React, Node, jQuery,
-                            Ruby on Rails, Bootstrap, Foundation, SQL, and PHP. I often use IntelliJ-based IDEs and
-                            I've used Grunt for task running. This website is one example of my web development, and
-                            the source is hosted on GitHub <a target="_blank" href="https://github.com/shamgang/resume">here</a>.
+                            Besides the obvious use of JavaScript, HTML, and CSS, I use Angular 1 and 2 (the latter
+                            with TypeScript), React, Node, jQuery, Ruby on Rails, Bootstrap, Foundation, SQL, and PHP.
+                            I often use IntelliJ-based IDEs and I've used both Gulp and Grunt for build and task running.
+                            This website is one example of my web development, and the source is hosted on
+                            GitHub <a target="_blank" href="https://github.com/shamgang/resume">here</a>.
                         </p>
                         <p>
-                            I recently built an internal website at Amazon using Angular and Ruby on Rails.
+                            I am building a web UI at
+                            {'\u00a0'}<a href="#lab">Amazon</a> using Angular 2 with TypeScript on a Node
+                            backend, with Gulp.
+                            Last year I built an internal website at Amazon using Angular and Ruby on Rails.
                             Prior to that, I was responsible for a redesign of
                             {'\u00a0'}<a target="_blank" href="https://www.recourse.co">Recourse.co</a>
                             {'\u00a0'}with a particular focus on responsiveness and cross-device compatibility.
@@ -265,7 +275,8 @@ var MainContent = React.createClass({
                         </p>
                         <h2 id="python">python</h2>
                         <p>
-                            I have used Python for
+                            I develop Python libraries regularly as part of platform development at
+                            {'\u00a0'}<a href="#lab">Amazon</a>. I have also used Python for
                             {'\u00a0'}<a href="#cvml">machine learning</a>, implementing face classifiers,
                             parts-of-speech taggers, and many other learning algorithms. I also used Python through
                             Blender to automate the animation process of a short animated audio/video piece I made
@@ -330,7 +341,7 @@ var MainContent = React.createClass({
                         </p>
                         <h2 id="agile">agile</h2>
                         <p>
-                            I have worked in three separate occasions on teams practicing agile development. I am
+                            I have worked on four separate occasions on teams practicing agile development. I am
                             well acquainted with sprint planning, Scrum, and task/story workflows and I use these
                             practices to organize, plan, and track my own and my team's development.
                         </p>
@@ -375,7 +386,7 @@ var MainContent = React.createClass({
                             Naked Dance is a genre-bending improvisational "jazz" group comprised of U of M faculty.
                         </p>
                         <p>
-                            I recorded mixed, and mastered singer and actor Noah Weisbart's song "Da-yoo" featuring him
+                            I recorded, mixed, and mastered singer and actor Noah Weisbart's song "Da-yoo" featuring him
                             on voice and piano and U of M jazz students Noah Henriksson, Mike Perlman, and Everett Reid
                             on trumpet, bass, and piano. On this recording I took more of a pop approach:
                         </p>
@@ -496,6 +507,13 @@ var MainContent = React.createClass({
                         </p>
                         <iframe className="youtube" frameborder="0" allowfullscreen
                             src="https://www.youtube.com/embed/DSIh12SkbcA">
+                        </iframe>
+                        <p>
+                            I wrote this electronic composition called Glimmering, using one of my favorite Beatles
+                            samples, along with some custom synths and some drum grooves.
+                        </p>
+                        <iframe width="100%" height="166" scrolling="no" frameborder="no"
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/282352722&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_artwork=false">
                         </iframe>
                         <p>
                             As a member of U of M's Digital Music Ensemble, I helped to ideate, design, and create our
