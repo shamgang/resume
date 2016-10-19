@@ -433,6 +433,7 @@ var MainContent = React.createClass({
                             live sound. I managed a crew of 4 high school students who helped with micing, setup,
                             and cue operation.
                         </p>
+                        <img src={"roa.jpg"} className="programNotes"/>
                         <p>
                             I was on the production team for the University of Michigan School of Music, Theatre &amp; Dance's
                             production of Shakespeare's Henry IV: Part 1. I was one of two composers and three sound
