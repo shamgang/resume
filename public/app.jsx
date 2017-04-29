@@ -140,10 +140,23 @@ var NavBar = React.createClass({
 });
 
 var MainContent = React.createClass({
+    scrollToHash: function() {
+        /*
+        window.requestAnimationFrame(function() {
+            var hashElt = $(window.location.hash);
+            if(hashElt) {
+                hashElt.scrollTop = hashElt.offset().top;
+            }
+        });
+        */
+    },
     componentDidMount: function() {
         // Fade main content in after 4 seconds
         //fadeIn(this.refs.mainContent);
-        this.getDOMNode().scrollTop = $(window.location.hash).offset().top;
+        this.scrollToHash();
+    },
+    componentDidUpdate: function() {
+        this.scrollToHash();
     },
     render: function() {
         // MainContent element contains a splash and scrolling content organized by headings and subheadings
@@ -160,196 +173,13 @@ var MainContent = React.createClass({
                             musician, composer, producer and sound engineer. I'm from Southeast Michigan and I studied
                             computer engineering and sound engineering at the University of Michigan in Ann Arbor.
                         </p>
-                        <h1 id="software">software</h1>
-                        <p>
-                            {'\u00a0\u00a0'} I write software to build products, create experiences, and break technical
-                            barriers. I regularly use C, C++, Python, MATLAB, JavaScript, HTML/CSS, and Java/JNI and
-                            I've also used OpenCL, SQL, PHP, C&#35;, and Ruby. I've worked in development environments
-                            in Linux, Mac, and Windows, using Bash, Make, CMake, Gradle, IntelliJ, Unity, and Code Composer.
-                            In industry, I've worked on consumer devices, web and mobile applications, and
-                            native UIs and application frameworks. In the process I have learned and applied skills in
-                            object-oriented programming, multi-threaded CPU programming, graphics, massively parallel
-                            computation, web design and development, Android UI and platform, performance benchmarking,
-                            and cross-platform build systems. In academia I have studied and implemented operating
-                            systems, machine learning, computer vision, digital signal processing, embedded systems,
-                            data structures and algorithms, and processor design, and I have researched optimizations
-                            in X-Ray computed tomography using concepts in 3D mathematics and linear algebra
-                            implemented with GPUs.
-                        </p>
-                        <h2 id="lab">amazon lab126</h2>
-                        <p>
-                            I'm currently a software development engineer at Amazon working on emerging tech at the devices
-                            lab Lab126. I work on a frameworks team building systems to execute cutting-edge,
-                            resource-intensive algorithms and to differentiate Amazon's devices. I work in many
-                            languages daily, most frequently JavaScript, Python, and Java. In addition to my framework
-                            contributions I am building a web UI using Angular 2 with Typescript and a Node backend.
-                        </p>
-                        <p>
-                            I was an intern at Lab during the summers of 2014 and 2015 as well. In 2014,
-                            I worked on the Fire TV, prototyping features related to graphics, application
-                            cacheing, USB storage, and benchmarking, which also had implications for the then-unreleased Fire TV
-                            Stick. I also worked on the main Android UI. I spent time with Android, Java, JNI,
-                            C/C++, CMake, Android NDK toolchains, Android Studio, Gradle, and Git. In 2015, I worked
-                            on an emerging product, designing tools for development and data collection. I designed
-                            and built a many-threaded UI in C++ using Qt, CMake to enable user-friendly presentation and
-                            analysis of complex product code modules. I also designed and built a website for subjective
-                            data collection using HTML5, CSS, and AngularJS in a Ruby on Rails environment. I also
-                            worked with Java and JNI to implement cloud interfaces.
-                        </p>
-                        <h2 id="xray">u of m medical imaging</h2>
-                        <p>
-                            During my sophomore summer I worked on a team headed by the internationally acclaimed
-                            {'\u00a0'}<a target="_blank" href="http://web.eecs.umich.edu/~fessler/">Professor Jeffrey Fessler</a>
-                            {'\u00a0'}researching methods for X-ray computed tomography that
-                            significantly outperform status quo methods with the help of parallel computing on GPUs.
-                            This involved analyzing current research in medical imaging in order to devise massively
-                            parallel algorithms from applicable linear algebra formulae, and then implementing those
-                            algorithms using both C and OpenCL for optimal cooperation between the CPU and GPUs.
-                            This project involved heavy optimization, with every line of code written to maximize
-                            efficiency with respect to the hardware.
-                        </p>
-                        <h2 id="nuubo">nuubo</h2>
-                        <p>
-                            During my freshman summer I worked in Madrid at a wearable medical technology startup called
-                            {'\u00a0'}<a target="_blank" href="http://www.nuubo.com/">Nuubo</a> that has created
-                            an EKG in the form of an undershirt. I worked on porting libraries to the GPU using
-                            OpenCL to investigate performance improvements. I worked in a Spanish-speaking office
-                            and became conversational in Spanish during this time.
-                        </p>
-                        <h2 id="web">web</h2>
-                        <p>
-                            I've been involved with web development for personal and professional projects.
-                            Besides the obvious use of JavaScript, HTML, and CSS, I use Angular 1 and 2 (the latter
-                            with TypeScript), React, Node, jQuery, Ruby on Rails, Bootstrap, Foundation, SQL, and PHP.
-                            I often use IntelliJ-based IDEs and I've used both Gulp and Grunt for build and task running.
-                            This website is one example of my web development, and the source is hosted on
-                            GitHub <a target="_blank" href="https://github.com/shamgang/resume">here</a>.
-                        </p>
-                        <p>
-                            I am building a web UI at
-                            {'\u00a0'}<a href="#lab">Amazon</a> using Angular 2 with TypeScript on a Node
-                            backend, with Gulp.
-                            Last year I built an internal website at Amazon using Angular and Ruby on Rails.
-                            Prior to that, I was responsible for a redesign of
-                            {'\u00a0'}<a target="_blank" href="https://www.recourse.co">Recourse.co</a>
-                            {'\u00a0'}with a particular focus on responsiveness and cross-device compatibility.
-                            I have also worked on personal projects, including an event tracking and crowdfunding
-                            website built with APIs from Google Maps, Stripe, and Facebook.
-                        </p>
-                        <h2 id="android">android</h2>
-                        <p>
-                            I worked extensively with Android when developing for the Fire TV at Amazon. I worked daily
-                            with a very large Android code base, working on UI as well low-level concerns such as
-                            graphics and USB on the Android platform. I developed Java/Android code in Android Studio
-                            with Gradle for UI development and I worked with C++, the Android NDK, JNI, and CMake for
-                            system-level development.
-                        </p>
-                        <p>
-                            I have also experimented with Android personally. I created a transaction-tracking
-                            application called EasyMoney which originated as a need for a quick, simple budgeting
-                            tool and as an exercise in product design and best practices for user-facing Android code.
-                            The app is published in the
-                            {'\u00a0'}<a target="_blank" href="https://play.google.com/store/apps/details?id=com.shamik.easymoney.app&hl=en">Google Play Store</a>.{'\u00a0'}
-                            The source is available for browsing on <a target="_blank" href="https://github.com/shamgang/easymoney">GitHub</a>.{'\u00a0'}
-                            I have also worked on an app
-                            for tracking events using the Google Maps, Stripe, and Facebook Android APIs, in tandem
-                            with the aforementioned web project.
-                        </p>
-                        <h2 id="c++">C/C++</h2>
-                        <p>
-                            I have studied C and C++ throughout my coursework and have used these languages extensively
-                            in projects and in industry. In coursework, I have implemented many data structures
-                            and algorithms in C++, as well as operating system, file system, and distributed system
-                            functionality. I also worked with many C++ experts developing a large-scale, high-quality
-                            C++ code base at Amazon. I have used C to implement image processing,
-                            real-time DSP, embedded system communication, and processor simulation.
-                        </p>
-                        <h2 id="matlab">matlab</h2>
-                        <p>
-                            I have used MATLAB extensively in
-                            {'\u00a0'}<a href="#dsp">DSP</a>{'\u00a0'}
-                            work for prototyping signal processing, signal generation, UI, and matrix-based computation.
-                            I have also used MATLAB and extra toolkits for
-                            {'\u00a0'}<a href="#cvml">computer vision</a>, developing object trackers, panorama stitchers,
-                            neural networks, and other applications.
-                        </p>
-                        <h2 id="python">python</h2>
-                        <p>
-                            I develop Python libraries regularly as part of platform development at
-                            {'\u00a0'}<a href="#lab">Amazon</a>. I have also used Python for
-                            {'\u00a0'}<a href="#cvml">machine learning</a>, implementing face classifiers,
-                            parts-of-speech taggers, and many other learning algorithms. I also used Python through
-                            Blender to automate the animation process of a short animated audio/video piece I made
-                            as a side project. See the <a href="#composition">composition</a> section.
-                        </p>
-                        <h2 id="dsp">digital signal processing</h2>
-                        <p>
-                            As part of my computer engineering coursework I've studied both analog
-                            and digital signal theory as well as applications of digital signal processing. My senior
-                            design project was an embedded system for processing, visualizing, and analyzing music
-                            signals. I produced this demo video of the project:
-                        </p>
-                        <iframe className="youtube"
-                            src="//www.youtube.com/embed/lzsdMJA22CA?rel=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen>
-                        </iframe>
-                        <p>
-                            The project involved real-time effects processing, note and key detection, graphics
-                            programming, serial inter-device communication, and circuit design using tools such as
-                            TI DSP chips and microcontrollers, Altera FPGAs, MATLAB, C, I2C, I2S, SPI, UART, Verilog, soldering,
-                            laser cutters, machine presses, SolidWorks, Code Composer Studio, oscilloscopes, and
-                            function generators. The algorithm implementations are hosted on GitHub
-                            {'\u00a0'}<a target="_blank" href="https://github.com/shamgang/mpsembedded">here</a>.
-                        </p>
-                        <p>
-                            My freshman year, I created a music synthesizer and transcriber in MATLAB. The presentation
-                            video for that project is here:
-                        </p>
-                        <iframe className="youtube"
-                            src="//www.youtube.com/embed/Hl607Lvl_D4?rel=0&showinfo=0&autohide=1&start=260" frameborder="0" allowfullscreen>
-                        </iframe>
-                        <p>
-                            This was my first experience with programming and it involved GUI creation, pitch detection,
-                            and digital synthesis.
-                        </p>
-                        <h2 id="embedded">embedded systems</h2>
-                        <p>
-                            I worked with embedded systems in my senior project, using a microcontroller, two DSP chips,
-                            an FPGA, and a combination of analog, SPI, I2C, I2S, and VGA communication. See more above
-                            in the <a href="#dsp">DSP</a> section.
-                        </p>
-                        <h2 id="parallel">parallel computing</h2>
-                        <p>
-                            I worked with GPU parallel computing for performance optimization at
-                            {'\u00a0'}<a href="#nuubo">Nuubo</a> and <a href="#xray">UofM</a>. I have also worked with
-                            parallelism in operating systems coursework building a concurrent disk scheduler,
-                            a thread library, an external pager, and a distributed file system.
-                        </p>
-                        <h2 id="cvml">cv and ml</h2>
-                        <p>
-                            I have studied computer vision and machine learning in my coursework. In computer vision I
-                            implemented projects in demosaicing and auto-alignment, height map reconstruction using
-                            photometric stereo, blob detection, panorama stitching using feature extraction and RANSAC,
-                            and handwritten digit recognition using convolutional neural networks, all in MATLAB.
-                            In machine learning, I studied linear classifiers and regression, support vector machines,
-                            decision trees, ensemble methods, collaborative filtering for recommender problems,
-                            clustering, and generative models. I implemented a tweet classifier to decide whether
-                            tweeted reviews are positive or negative using SVMs and cross-validation. I implemented
-                            facial image clustering using principal component analysis, K-means/medioids and
-                            hierarchical clustering. I built a parts-of-speech tagger using mixture models. I
-                            implemented all of this functionality in Python with the help of the scikit-learn and
-                            pyplot libraries.
-                        </p>
-                        <h2 id="agile">agile</h2>
-                        <p>
-                            I have worked on four separate occasions on teams practicing agile development. I am
-                            well acquainted with sprint planning, Scrum, and task/story workflows and I use these
-                            practices to organize, plan, and track my own and my team's development.
-                        </p>
                         <h1 id="music">music</h1>
                         <p>
                             {'\u00a0\u00a0'} I am a sound engineer, music producer, computer musician, music programmer,
-                            composer, and performer. I have recorded and mixed a lot of jazz, and I've worked recently
-                            to create hip-hop, rock, pop, electronic, classical, and folk music as well. I studied performing
+                            composer, and performer. I release my own music with connie.k as
+                            {'\u00a0'}<a href="http://jonthalinks.com" target="_blank">Jontha Links</a>.
+                            I have recorded and mixed a lot of jazz and hip-hop, and I've
+                            created rock, pop, electronic, classical, and folk music as well. I studied performing
                             arts technology at the University of Michigan with a
                             focus in sound engineering. My coursework included composition, computer music, sound
                             recording, sound reinforcement, studio production, sound for theatre, and jazz improvisation.
@@ -371,6 +201,18 @@ var MainContent = React.createClass({
                             used them extensively for class and personal projects. I use software like Ableton Live, Pro Tools, Logic, Final Cut, and Melodyne
                             for recording, editing, and mixing.
                         </p>
+                        <p>
+                            I played in, recorded, mixed, and mastered this
+                            {'\u00a0'}<a href="http://jonthalinks.com" target="_blank">Jontha Links</a> production
+                            of a cover of Khalid's "Location":
+                        </p>
+                        <iframe className="youtube"
+                            src="https://www.youtube.com/embed/fK9U0ppouTI" frameborder="0" allowfullscreen>
+                        </iframe>
+                        <p>
+                            I was the recording engineer, sound editor, and a mixing engineer on Will Rachofsky's album Dream State:
+                        </p>
+                        <iframe src="https://embed.spotify.com/?uri=spotify%3Aalbum%3A3JpIPp2h7FHmdZFqpKTr1Q" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
                         <p>
                             I was the lead recording engineer and a mix engineer on some sessions for jazz professor
                             Dennis Wilson and his trombone / vocal ensembles. Those tracks are below:
@@ -595,6 +437,206 @@ var MainContent = React.createClass({
                             {'\u00a0'}YouTube channel.
                         </p>
 
+                        <h1 id="software">software</h1>
+                        <p>
+                            {'\u00a0\u00a0'} I write software to build products, create experiences, and break technical
+                        barriers.
+                        In industry, I've worked on consumer devices, machine learning systems, web and mobile applications, and
+                        native UIs and application frameworks. In the process I have learned and applied skills in
+                        system design, object-oriented programming, distributed programming, multi-threaded CPU programming,
+                        graphics, massively parallel computation, web design and development, Android UI and platform, performance benchmarking,
+                        and cross-platform build systems. In academia I have studied and implemented operating
+                        systems, machine learning, computer vision, digital signal processing, embedded systems,
+                        data structures and algorithms, and processor design, and I have researched optimizations
+                        in X-Ray computed tomography using concepts in 3D mathematics and linear algebra
+                        implemented with GPUs.
+                        I regularly use Python, JavaScript, HTML/CSS, and Java, I've worked extensively with
+                        C, C++, and MATLAB, and I've also used OpenCL, SQL, PHP, C&#35;, and Ruby. I work with technologies
+                        such as Node.js, Angular2.0, Typescript, Gulp, Spark, Mesos, Docker, S3, Postgres, Redshift, and MySQL.
+                        I've worked in development environments
+                        in Linux, Mac, and Windows, using Bash, Make, CMake, Gradle, IntelliJ, Unity, and Code Composer.
+                        </p>
+                        <h2 id="lab">amazon lab126</h2>
+                        <p>
+                        I'm currently a software development engineer at Amazon working on emerging tech at the devices
+                        lab Lab126. I work in the imaging systems group building innovative computer vision products.
+                        We recently released the
+                        {'\u00a0'}<a target="_blank" href="https://techcrunch.com/video/amazons-new-echo-look-has-a-built-in-camera-for-style-selfies/5900fe8c8c08e052e165f224/">Echo Look</a> and the
+                        {'\u00a0'}<a target="_blank" href="https://techcrunch.com/2017/03/17/amazon-will-now-tell-prime-members-what-to-wear-via-a-new-outfit-compare-feature/?ncid=rss">Outfit Compare</a> feature on the Amazon app.
+                        <iframe className="youtube" frameborder="0" allowfullscreen
+                            src="https://www.youtube.com/embed/9X_fP4pPWPw">
+                        </iframe>
+                        I work on a frameworks team building systems to execute cutting-edge computer vision and
+                        machine learning algorithms on massive distributed datasets. I am also the lead web developer
+                        and designer of internal dashboards for algorithm development and product management
+                        and I work on the back-end systems that populate our dashboards with data.
+                        I am frequently responsible for spearheading the design of our systems, and I lead design and
+                        customer meetings daily. I interview and mentor other engineers and focus on leadership and
+                        efficient collaboration and communication. I work in many languages daily, most frequently
+                        JavaScript, Python, and Java. Technologies I use daily include Node.js, Angular 2.0, Typescript,
+                        Gulp, Postgres, Redshift, and Spark.
+                        </p>
+                        <p>
+                        I was an intern at Lab during the summers of 2014 and 2015 as well. In 2014,
+                        I worked on the Fire TV, prototyping features related to graphics, application
+                        cacheing, USB storage, and benchmarking, which also had implications for the then-unreleased Fire TV
+                        Stick. I also worked on the main Android UI. I spent time with Android, Java, JNI,
+                        C/C++, CMake, Android NDK toolchains, Android Studio, Gradle, and Git. In 2015, I worked
+                        on an emerging product, designing tools for development and data collection. I designed
+                        and built a many-threaded UI in C++ using Qt, CMake to enable user-friendly presentation and
+                        analysis of complex product code modules. I also designed and built a website for subjective
+                        data collection using HTML5, CSS, and AngularJS in a Ruby on Rails environment. I also
+                        worked with Java and JNI to implement cloud interfaces.
+                        </p>
+                        <h2 id="xray">u of m medical imaging</h2>
+                        <p>
+                        During my sophomore summer I worked on a team headed by the internationally acclaimed
+                            {'\u00a0'}<a target="_blank" href="http://web.eecs.umich.edu/~fessler/">Professor Jeffrey Fessler</a>
+                            {'\u00a0'}researching methods for X-ray computed tomography that
+                        significantly outperform status quo methods with the help of parallel computing on GPUs.
+                        This involved analyzing current research in medical imaging in order to devise massively
+                        parallel algorithms from applicable linear algebra formulae, and then implementing those
+                        algorithms using both C and OpenCL for optimal cooperation between the CPU and GPUs.
+                        This project involved heavy optimization, with every line of code written to maximize
+                        efficiency with respect to the hardware.
+                        </p>
+                        <h2 id="nuubo">nuubo</h2>
+                        <p>
+                        During my freshman summer I worked in Madrid at a wearable medical technology startup called
+                            {'\u00a0'}<a target="_blank" href="http://www.nuubo.com/">Nuubo</a> that has created
+                        an EKG in the form of an undershirt. I worked on porting libraries to the GPU using
+                        OpenCL to investigate performance improvements. I worked in a Spanish-speaking office
+                        and became conversational in Spanish during this time.
+                        </p>
+                        <h2 id="web">web</h2>
+                        <p>
+                        I've been involved with web development for personal and professional projects.
+                        Besides the obvious use of JavaScript, HTML, and CSS, I use Angular 1 and 2 (the latter
+                        with TypeScript), React, Node, jQuery, Ruby on Rails, Bootstrap, Foundation, SQL, and PHP.
+                        I often use IntelliJ-based IDEs and I've used both Gulp and Grunt for build and task running.
+                        This website is one example of my web development, and the source is hosted on
+                        GitHub <a target="_blank" href="https://github.com/shamgang/resume">here</a>.
+                        </p>
+                        <p>
+                        I am building a web UI at
+                            {'\u00a0'}<a href="#lab">Amazon</a> using Angular 2 with TypeScript on a Node
+                        backend, with Gulp.
+                        Last year I built an internal website at Amazon using Angular and Ruby on Rails.
+                        Prior to that, I was responsible for a redesign of
+                            {'\u00a0'}<a target="_blank" href="https://www.recourse.co">Recourse.co</a>
+                            {'\u00a0'}with a particular focus on responsiveness and cross-device compatibility.
+                        I have also worked on personal projects, including an event tracking and crowdfunding
+                        website built with APIs from Google Maps, Stripe, and Facebook.
+                        </p>
+                        <h2 id="android">android</h2>
+                        <p>
+                        I worked extensively with Android when developing for the Fire TV at Amazon. I worked daily
+                        with a very large Android code base, working on UI as well low-level concerns such as
+                        graphics and USB on the Android platform. I developed Java/Android code in Android Studio
+                        with Gradle for UI development and I worked with C++, the Android NDK, JNI, and CMake for
+                        system-level development.
+                        </p>
+                        <p>
+                        I have also experimented with Android personally. I created a transaction-tracking
+                        application called EasyMoney which originated as a need for a quick, simple budgeting
+                        tool and as an exercise in product design and best practices for user-facing Android code.
+                        The app is published in the
+                            {'\u00a0'}<a target="_blank" href="https://play.google.com/store/apps/details?id=com.shamik.easymoney.app&hl=en">Google Play Store</a>.{'\u00a0'}
+                        The source is available for browsing on <a target="_blank" href="https://github.com/shamgang/easymoney">GitHub</a>.{'\u00a0'}
+                        I have also worked on an app
+                        for tracking events using the Google Maps, Stripe, and Facebook Android APIs, in tandem
+                        with the aforementioned web project.
+                        </p>
+                        <h2 id="c++">C/C++</h2>
+                        <p>
+                        I have studied C and C++ throughout my coursework and have used these languages extensively
+                        in projects and in industry. In coursework, I have implemented many data structures
+                        and algorithms in C++, as well as operating system, file system, and distributed system
+                        functionality. I also worked with many C++ experts developing a large-scale, high-quality
+                        C++ code base at Amazon. I have used C to implement image processing,
+                        real-time DSP, embedded system communication, and processor simulation.
+                        </p>
+                        <h2 id="matlab">matlab</h2>
+                        <p>
+                        I have used MATLAB extensively in
+                            {'\u00a0'}<a href="#dsp">DSP</a>{'\u00a0'}
+                        work for prototyping signal processing, signal generation, UI, and matrix-based computation.
+                        I have also used MATLAB and extra toolkits for
+                            {'\u00a0'}<a href="#cvml">computer vision</a>, developing object trackers, panorama stitchers,
+                        neural networks, and other applications.
+                        </p>
+                        <h2 id="python">python</h2>
+                        <p>
+                        I develop Python libraries regularly as part of platform development at
+                            {'\u00a0'}<a href="#lab">Amazon</a>. I have also used Python for
+                            {'\u00a0'}<a href="#cvml">machine learning</a>, implementing face classifiers,
+                        parts-of-speech taggers, and many other learning algorithms. I also used Python through
+                        Blender to automate the animation process of a short animated audio/video piece I made
+                        as a side project. See the <a href="#composition">composition</a> section.
+                        </p>
+                        <h2 id="dsp">digital signal processing</h2>
+                        <p>
+                        As part of my computer engineering coursework I've studied both analog
+                        and digital signal theory as well as applications of digital signal processing. My senior
+                        design project was an embedded system for processing, visualizing, and analyzing music
+                        signals. I produced this demo video of the project:
+                        </p>
+                        <iframe className="youtube"
+                            src="//www.youtube.com/embed/lzsdMJA22CA?rel=0&showinfo=0&autohide=1" frameborder="0" allowfullscreen>
+                        </iframe>
+                        <p>
+                        The project involved real-time effects processing, note and key detection, graphics
+                        programming, serial inter-device communication, and circuit design using tools such as
+                        TI DSP chips and microcontrollers, Altera FPGAs, MATLAB, C, I2C, I2S, SPI, UART, Verilog, soldering,
+                        laser cutters, machine presses, SolidWorks, Code Composer Studio, oscilloscopes, and
+                        function generators. The algorithm implementations are hosted on GitHub
+                            {'\u00a0'}<a target="_blank" href="https://github.com/shamgang/mpsembedded">here</a>.
+                        </p>
+                        <p>
+                        My freshman year, I created a music synthesizer and transcriber in MATLAB. The presentation
+                        video for that project is here:
+                        </p>
+                        <iframe className="youtube"
+                            src="//www.youtube.com/embed/Hl607Lvl_D4?rel=0&showinfo=0&autohide=1&start=260" frameborder="0" allowfullscreen>
+                        </iframe>
+                        <p>
+                        This was my first experience with programming and it involved GUI creation, pitch detection,
+                        and digital synthesis.
+                        </p>
+                        <h2 id="embedded">embedded systems</h2>
+                        <p>
+                        I worked with embedded systems in my senior project, using a microcontroller, two DSP chips,
+                        an FPGA, and a combination of analog, SPI, I2C, I2S, and VGA communication. See more above
+                        in the <a href="#dsp">DSP</a> section.
+                        </p>
+                        <h2 id="parallel">parallel computing</h2>
+                        <p>
+                        I worked with GPU parallel computing for performance optimization at
+                            {'\u00a0'}<a href="#nuubo">Nuubo</a> and <a href="#xray">UofM</a>. I have also worked with
+                        parallelism in operating systems coursework building a concurrent disk scheduler,
+                        a thread library, an external pager, and a distributed file system.
+                        </p>
+                        <h2 id="cvml">cv and ml</h2>
+                        <p>
+                        I have studied computer vision and machine learning in my coursework. In computer vision I
+                        implemented projects in demosaicing and auto-alignment, height map reconstruction using
+                        photometric stereo, blob detection, panorama stitching using feature extraction and RANSAC,
+                        and handwritten digit recognition using convolutional neural networks, all in MATLAB.
+                        In machine learning, I studied linear classifiers and regression, support vector machines,
+                        decision trees, ensemble methods, collaborative filtering for recommender problems,
+                        clustering, and generative models. I implemented a tweet classifier to decide whether
+                        tweeted reviews are positive or negative using SVMs and cross-validation. I implemented
+                        facial image clustering using principal component analysis, K-means/medioids and
+                        hierarchical clustering. I built a parts-of-speech tagger using mixture models. I
+                        implemented all of this functionality in Python with the help of the scikit-learn and
+                        pyplot libraries.
+                        </p>
+                        <h2 id="agile">agile</h2>
+                        <p>
+                        I have worked on four separate occasions on teams practicing agile development. I am
+                        well acquainted with sprint planning, Scrum, and task/story workflows and I use these
+                        practices to organize, plan, and track my own and my team's development.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -607,6 +649,15 @@ var MainContainer = React.createClass({
         // It stores the model that populates the NavBar
 
         var navData = [
+            {
+                text: 'music',
+                hash: 'music',
+                subheadings: [
+                    { text: 'production/engineering', hash: 'production' },
+                    { text: 'composition', hash: 'composition' },
+                    { text: 'performance', hash: 'performance' }
+                ]
+            },
             {
                 text: 'software',
                 hash: 'software',
@@ -624,15 +675,6 @@ var MainContainer = React.createClass({
                     { text: 'parallel computing', hash: 'parallel' },
                     { text: 'cv and ml', hash: 'cvml' },
                     { text: 'agile', hash: 'agile' }
-                ]
-            },
-            {
-                text: 'music',
-                hash: 'music',
-                subheadings: [
-                    { text: 'production/engineering', hash: 'production' },
-                    { text: 'composition', hash: 'composition' },
-                    { text: 'performance', hash: 'performance' }
                 ]
             }
         ];
