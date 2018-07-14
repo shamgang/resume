@@ -1,5 +1,9 @@
 /* styles.scss */
 
+$break-1: 800px;
+$break-2: 600px;
+$break-3: 500px;
+
 html, body, .MainContainer, {
   height: 100%;
   margin: 0;
@@ -8,31 +12,6 @@ html, body, .MainContainer, {
   position: relative;
   height: 100%;
   overflow: hidden;
-}
-.portrait {
-  position: absolute;
-  //width: 100%;
-  //height: 100vh;
-  width: 15em;
-  height: 10em;
-  background-image: url("portrait.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 0;
-
-  .speech {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-image: url("speech.png");
-    background-size: contain;
-    background-position: center 200px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    z-index: -1;
-    opacity: 0;
-  }
 }
 
 ::-webkit-scrollbar {
@@ -48,116 +27,127 @@ html, body, .MainContainer, {
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-.navBar {
-  position: absolute;
-  width: 15em;
-  top: 10em;
-  bottom: 0;
-  border-right: 4px solid rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  //opacity: 0;
-  z-index: 1;
-  overflow-y: auto;
-
-  .navTitle {
-    font-family: "Lucida Console", Monaco, monospace;
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: 3px solid rgba(196, 235, 255, 0.5);
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.9);;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .navGroup {
-    box-sizing: border-box;
-    position: relative;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.9);
-    width: 100%;
-    padding: 0.5em 0 0.75em 0.75em;
-    border-bottom: 3px solid rgba(196, 235, 255, 0.5);
-
-    &.opened {
-      background-color: rgba(196, 235, 255, 0.5);
-    }
-
-    &:hover {
-      background-color: rgba(196, 235, 255, 0.7);
-    }
-
-    &:active {
-      background-color: rgba(196, 235, 255, 1);
-    }
-
-    .arrowImg {
-      width: 1em;
-      position: absolute;
-      right: 7px;
-      top: 0.9em;
-      height: 0.5em;
-    }
-  }
-
-  .navLink {
-    box-sizing: border-box;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 0.9em;
-    color: rgba(0, 0, 0, 0.9);
-    width: 100%;
-    text-align: right;
-    padding: 0.5em 1em 0.75em 0;
-    border-bottom: 3px solid rgba(196, 235, 255, 0.5);
-
-    &:hover {
-      background-color: rgba(196, 235, 255, 0.7);
-    }
-
-    &:active {
-      background-color: rgba(196, 235, 255, 1);
-    }
-  }
-
-  .navPad {
-    height: 1.5em;
-  }
-}
-
 .mainContent {
   position: absolute;
-  left: 15em;
+  left: 0;
   right: 0;
   bottom: 0;
   top: 0;
   overflow-y: auto;
-  background-image: url('sunset_mackinac_bridge_crop.jpg');
-  background-size: auto 25em;
+  background-color: black;
+
   //opacity: 0;
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px rgba(173, 216, 255, 1);
+    }
+    to {
+      text-shadow: 0 0 0px rgba(173, 216, 230, 0);
+    }
+  }
+
+  a {
+    animation: glow 1s infinite alternate;
+    color: rgba(128, 191, 255, 0.7);
+    text-decoration-color: rgba(128, 191, 255, 0.2);
+  }
 
   .mainScroller {
     position: relative;
 
     .splash {
+      position: relative;
       box-sizing: border-box;
-      height: 10em;
+      height: 350px;
       text-align: center;
-      color: white;
-      font-family: "Lucida Console", Monaco, monospace;
-      font-size: 2.5em;
-      padding: 5em 2em 0 2em;
+      padding-top: 150px;
+
+      @media screen and (max-width: $break-1) {
+        height: 40vw;
+        padding-top: 20vw;
+      }
+
+      @media screen and (max-width: $break-3) {
+        height: 200px;
+        padding-top: 100px;
+      }
+
+      .splashText {
+        position: relative;
+        z-index: 3;
+        margin-left: 5em;
+        color: white;
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: 2.5em;
+
+        @media screen and (max-width: $break-1) {
+          font-size: 2em;
+        }
+
+        @media screen and (max-width: $break-2) {
+          font-size: 1em;
+        }
+      }
+
+      .splashBack {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background-image: url('sunset_mackinac_bridge_crop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .splashFront {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-image: url('transparent_splash.png');
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+      }
     }
 
     .mainText {
-      padding: 2em 10em;
-      background-color: white;
+      padding: 2em 5em;
+      background-color: black;
+      border-top: 1px solid white;
+      color: white;
+
+      @media screen and (max-width: $break-1) {
+        padding: 2em 4em;
+      }
+
+      @media screen and (max-width: $break-2) {
+        padding: 2em 3em;
+      }
+
+      @media screen and (max-width: $break-3) {
+        padding: 2em 2em;
+      }
 
       h1 {
         font-size: 3em;
         border-bottom: 2px solid rgba(0, 0, 0, 0.075);
+
+        @media screen and (max-width: $break-1) {
+          font-size: 2.5em;
+        }
+
+        @media screen and (max-width: $break-2) {
+          font-size: 1.5em;
+        }
+
+        @media screen and (max-width: $break-3) {
+          font-size: 1em;
+        }
       }
 
       h2 {
@@ -166,18 +156,61 @@ html, body, .MainContainer, {
       }
 
       p {
-        font-size: 1em;
-        font-family: Verdana, Geneva, sans-serif;
+        font-size: 1.2em;
+        font-family: "Lucida Console", Monaco, monospace;
         line-height: 150%;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+
+        @media screen and (max-width: $break-1) {
+          font-size: 1em;
+        }
+
+        @media screen and (max-width: $break-2) {
+          font-size: 0.8em;
+        }
+
+        @media screen and (max-width: $break-3) {
+          font-size: 0.6em;
+        }
+
       }
 
       .youtube {
-        width: 100%;
+        width: 53vw;
         height: 30vw;
+        margin: 0 auto;
+
+        @media screen and (max-width: $break-1) {
+          width: 80vw;
+          height: 45vw;
+        }
+      }
+
+      .spotify {
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      .soundcloud {
+        height: 166px;
+
+        @media screen and (max-width: $break-1) {
+          height: 100px;
+        }
+
+        @media screen and (max-width: $break-3) {
+          height: 60px;
+        }
       }
 
       .programNotes {
         width: 50%;
+        margin: 0 auto;
+
+        img {
+          width: 100%;
+        }
+
       }
     }
   }

@@ -4,6 +4,8 @@
   "description": "personalsite",
   "main": "web.js",
   "scripts": {
+    "sass": "node-sass --source-map true public/ -o public/",
+    "server": "node web.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +21,8 @@
     "ejs": "^0.7.1",
     "express": "^4.6.1",
     "logfmt": "^1.1.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.2"
   }
 }

@@ -8,27 +8,6 @@ html, body, .MainContainer {
   height: 100%;
   overflow: hidden; }
 
-.portrait {
-  position: absolute;
-  width: 15em;
-  height: 10em;
-  background-image: url("portrait.jpg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 0; }
-  .portrait .speech {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background-image: url("speech.png");
-    background-size: contain;
-    background-position: center 200px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    z-index: -1;
-    opacity: 0; }
-
 ::-webkit-scrollbar {
   width: 5px; }
 
@@ -39,97 +18,139 @@ html, body, .MainContainer {
 ::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4); }
 
-.navBar {
-  position: absolute;
-  width: 15em;
-  top: 10em;
-  bottom: 0;
-  border-right: 4px solid rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  z-index: 1;
-  overflow-y: auto; }
-  .navBar .navTitle {
-    font-family: "Lucida Console", Monaco, monospace;
-    text-align: center;
-    padding: 10px 0;
-    border-bottom: 3px solid rgba(196, 235, 255, 0.5);
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.9); }
-  .navBar a {
-    text-decoration: none; }
-  .navBar .navGroup {
-    box-sizing: border-box;
-    position: relative;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.9);
-    width: 100%;
-    padding: 0.5em 0 0.75em 0.75em;
-    border-bottom: 3px solid rgba(196, 235, 255, 0.5); }
-    .navBar .navGroup.opened {
-      background-color: rgba(196, 235, 255, 0.5); }
-    .navBar .navGroup:hover {
-      background-color: rgba(196, 235, 255, 0.7); }
-    .navBar .navGroup:active {
-      background-color: #c4ebff; }
-    .navBar .navGroup .arrowImg {
-      width: 1em;
-      position: absolute;
-      right: 7px;
-      top: 0.9em;
-      height: 0.5em; }
-  .navBar .navLink {
-    box-sizing: border-box;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 0.9em;
-    color: rgba(0, 0, 0, 0.9);
-    width: 100%;
-    text-align: right;
-    padding: 0.5em 1em 0.75em 0;
-    border-bottom: 3px solid rgba(196, 235, 255, 0.5); }
-    .navBar .navLink:hover {
-      background-color: rgba(196, 235, 255, 0.7); }
-    .navBar .navLink:active {
-      background-color: #c4ebff; }
-  .navBar .navPad {
-    height: 1.5em; }
-
 .mainContent {
   position: absolute;
-  left: 15em;
+  left: 0;
   right: 0;
   bottom: 0;
   top: 0;
   overflow-y: auto;
-  background-image: url("sunset_mackinac_bridge_crop.jpg");
-  background-size: auto 25em; }
+  background-color: black; }
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #add8ff; }
+  to {
+    text-shadow: 0 0 0px rgba(173, 216, 230, 0); } }
+  .mainContent a {
+    animation: glow 1s infinite alternate;
+    color: rgba(128, 191, 255, 0.7);
+    text-decoration-color: rgba(128, 191, 255, 0.2); }
   .mainContent .mainScroller {
     position: relative; }
     .mainContent .mainScroller .splash {
+      position: relative;
       box-sizing: border-box;
-      height: 10em;
+      height: 350px;
       text-align: center;
-      color: white;
-      font-family: "Lucida Console", Monaco, monospace;
-      font-size: 2.5em;
-      padding: 5em 2em 0 2em; }
+      padding-top: 150px; }
+      @media screen and (max-width: 800px) {
+        .mainContent .mainScroller .splash {
+          height: 40vw;
+          padding-top: 20vw; } }
+      @media screen and (max-width: 500px) {
+        .mainContent .mainScroller .splash {
+          height: 200px;
+          padding-top: 100px; } }
+      .mainContent .mainScroller .splash .splashText {
+        position: relative;
+        z-index: 3;
+        margin-left: 5em;
+        color: white;
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: 2.5em; }
+        @media screen and (max-width: 800px) {
+          .mainContent .mainScroller .splash .splashText {
+            font-size: 2em; } }
+        @media screen and (max-width: 600px) {
+          .mainContent .mainScroller .splash .splashText {
+            font-size: 1em; } }
+      .mainContent .mainScroller .splash .splashBack {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background-image: url("sunset_mackinac_bridge_crop.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .mainContent .mainScroller .splash .splashFront {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-image: url("transparent_splash.png");
+        background-repeat: no-repeat;
+        background-size: auto 100%; }
     .mainContent .mainScroller .mainText {
-      padding: 2em 10em;
-      background-color: white; }
+      padding: 2em 5em;
+      background-color: black;
+      border-top: 1px solid white;
+      color: white; }
+      @media screen and (max-width: 800px) {
+        .mainContent .mainScroller .mainText {
+          padding: 2em 4em; } }
+      @media screen and (max-width: 600px) {
+        .mainContent .mainScroller .mainText {
+          padding: 2em 3em; } }
+      @media screen and (max-width: 500px) {
+        .mainContent .mainScroller .mainText {
+          padding: 2em 2em; } }
       .mainContent .mainScroller .mainText h1 {
         font-size: 3em;
         border-bottom: 2px solid rgba(0, 0, 0, 0.075); }
+        @media screen and (max-width: 800px) {
+          .mainContent .mainScroller .mainText h1 {
+            font-size: 2.5em; } }
+        @media screen and (max-width: 600px) {
+          .mainContent .mainScroller .mainText h1 {
+            font-size: 1.5em; } }
+        @media screen and (max-width: 500px) {
+          .mainContent .mainScroller .mainText h1 {
+            font-size: 1em; } }
       .mainContent .mainScroller .mainText h2 {
         margin-top: 1.25em;
         font-family: Verdana, Geneva, sans-serif; }
       .mainContent .mainScroller .mainText p {
-        font-size: 1em;
-        font-family: Verdana, Geneva, sans-serif;
-        line-height: 150%; }
+        font-size: 1.2em;
+        font-family: "Lucida Console", Monaco, monospace;
+        line-height: 150%;
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.1); }
+        @media screen and (max-width: 800px) {
+          .mainContent .mainScroller .mainText p {
+            font-size: 1em; } }
+        @media screen and (max-width: 600px) {
+          .mainContent .mainScroller .mainText p {
+            font-size: 0.8em; } }
+        @media screen and (max-width: 500px) {
+          .mainContent .mainScroller .mainText p {
+            font-size: 0.6em; } }
       .mainContent .mainScroller .mainText .youtube {
-        width: 100%;
-        height: 30vw; }
+        width: 53vw;
+        height: 30vw;
+        margin: 0 auto; }
+        @media screen and (max-width: 800px) {
+          .mainContent .mainScroller .mainText .youtube {
+            width: 80vw;
+            height: 45vw; } }
+      .mainContent .mainScroller .mainText .spotify {
+        width: 300px;
+        margin: 0 auto; }
+      .mainContent .mainScroller .mainText .soundcloud {
+        height: 166px; }
+        @media screen and (max-width: 800px) {
+          .mainContent .mainScroller .mainText .soundcloud {
+            height: 100px; } }
+        @media screen and (max-width: 500px) {
+          .mainContent .mainScroller .mainText .soundcloud {
+            height: 60px; } }
       .mainContent .mainScroller .mainText .programNotes {
-        width: 50%; }
+        width: 50%;
+        margin: 0 auto; }
+        .mainContent .mainScroller .mainText .programNotes img {
+          width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
